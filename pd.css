@@ -1,0 +1,28 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: url(./resume.jpg);
+    animation: fadein 2s; 
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+.para{
+    text-align: center;
+    font-size: 120%;
+    margin-top: 10px;
+}
+.font{
+    font-family:cursive;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    
+}
+.info{
+    font-size: 22px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}

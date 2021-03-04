@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: auto;
+            border: 2px solid red;
+            font-size: 25px;
+            color: blue;
+            text-align: center;
+        }
+        #demo{
+            font-size: 25px;
+        }
+        #btn{
+            font-size: 15px;
+            width: 20%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+  
+<div class="container">
+
+<p>Click the button to get your coordinates.</p>
+
+<button id="btn" onclick="getLocation()">Find It</button>
+
+<p id="demo"></p>
+</div>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>

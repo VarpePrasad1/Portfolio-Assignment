@@ -1,0 +1,123 @@
+body{
+    margin:0px;
+    padding:0px;
+    background: url(./form.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-size: 110%
+    /* font-family:sans-serif; */
+}
+
+.top{
+    display: flex;
+    height: 200px;
+    background-image: url(./dpback.jpg);
+    background-repeat: repeat;
+}
+.left{
+    width:35%;
+}
+
+.top img{
+    height: 100%;
+}
+.middle{
+    background-image: url(./name.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    width:30%;
+}
+.img_bg{
+    background-image: url(./my_img.jpg);
+    /* border: 2px solid red; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 109%;
+    width: 36%;
+    height: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 70px;
+}
+.right{
+    width:35% ;
+    background-image: url(./dpback.jpg);
+    background-repeat: repeat;
+}
+.name{
+    font-size: 220%;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-top: 10%;
+    color: rgb(139, 14, 14);
+    text-shadow:1px 1px yellow;
+}
+.branch{
+    font-size:150%;
+    font-weight: bold;
+    /* border:1px solid red; */
+    margin: auto;
+    text-align: center;
+}
+.contact{
+    margin: auto;
+    margin-top:9%;
+}
+.info{
+    font-weight: bold;
+    margin-top:-2%;
+    text-align:center;
+}
+.left_menu{
+    /* border:2px solid red; */
+    margin-top:5px;
+    margin-left:5px;
+    width:25%;
+    height: 530px;
+    background: url(./menu.jpg);
+}
+.outside_left_menu_item{
+    margin-top: 90px;
+    padding: 5px 0 ;
+    /* border: 2px solid red; */
+
+}
+.left_menu_item{
+    /* border: 1px solid blue; */
+    text-align: center;
+    height: 45px;
+    width: 95%;
+    margin: auto;
+    border-radius: 3%;
+    font-size: 150%;
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: -18px;
+}
+.left_menu_item_link{
+    text-decoration: none;
+    border: 1px solid white;
+    color: black;
+    background-color: #fff;
+    margin-bottom: 0px;
+    height: 50px;
+    /* width: 95%; */
+}
+.left_menu_item:hover{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    cursor: pointer;
+}
+.right_content{
+    position: absolute;
+    left: 26%;
+    top:31.5%;
+    width: 73.5%;
+    /* height: 85%; */
+    height: 450px;
+    margin:auto;
+    /* border: 1px solid blue; */
+
+}

@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(./table.jpg);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    animation: fadein 2s; 
+       
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+.title{
+    text-align: center; 
+    font-size: 200%; 
+    margin-top: 10px;
+}
+.dropdown{
+    display: relative;
+    border:1px solid black;
+    text-align: center; 
+    font-size: 25px;
+    background-color: white;
+    margin:10px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+.dropdown-content{
+    display: none;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left; 
+    margin:10px;
+
+}
+.dropdown-content:hover{
+    background-color: gray;
+    color: white;
+}
+
+.dropdown:hover{
+    background-color: rgb(112, 112, 112);
+    color: white;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    color: black;
+}

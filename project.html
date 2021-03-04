@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="/project.css">
+</head>
+
+<body>
+
+    <h2 class="title"><u>PROJECTS</u></h2>
+    <div class="dropdown" onclick="show_content(0);">
+        C - Magic Cards
+    </div>
+    <div class="dropdown-content">
+        <ul>
+            <li>It's a card's magic which is converted into C code. User will choose any number from 1 to 63, then
+                computer will ask some yes/no questions. based on than answer computer print that number on the screen
+                as a output</li>
+        </ul>
+        <ul>
+            <li>Click For <a href="https://github.com/VarpePrasad1/Magic_cards" target="_blank">GitHub Link </a></li>
+        </ul>
+    </div>
+    <!-- Python Project -->
+    <div class="dropdown" onclick="show_content(1);">
+        Python - Contributor
+    </div>
+    <div class="dropdown-content">
+        <ul>
+            <li>Whenever we go on picnic with friends, family, relatives etc. we often paid money for others. At the end it become difficult to calculate how much money to be paid by who to whom. So i create a <strong>contributor</strong> as a mini project for this situation. whenever anyone paid money, he/she should enter details in this app, and it will calculate every members contribution to others.</li>
+        </ul>
+        <ul>
+            <li>Click For <a href="https://github.com/VarpePrasad1/contributor" target="_blank">GitHub Link </a></li>
+        </ul>
+    </div>
+    <!-- Web - Miniproject -->
+    <div class="dropdown" onclick="show_content(2);">
+        Website- Sports Academy
+    </div>
+    <div class="dropdown-content">
+        <ul>
+            <li>
+                It is a dynamic website created using HTML, CSS, JavaScript. we used PHP for Backend.
+            </li>
+            <li>
+                There will be many sports options like cricket, football, chess etc. from which user can check every sports details and take membership of that sport. we implemented Google signIn api for sign in and Paytm API for membership payment process.  
+            </li>
+            </ul>
+        <ul>
+            <li>Click For <a href="https://github.com/VarpePrasad1/contributor" target="_blank">GitHub Link </a></li>
+        </ul>
+    </div>
+    <!-- IOT Mini-project -->
+    <div class="dropdown" onclick="show_content(3);">
+        Gas Leakage Detector using Arduino  
+    </div>
+    <div class="dropdown-content">
+        <ul>
+            <li>
+                Many times it happens that gas leakage from cylinder and within some seconds it spread in the atmosphere. we created <strong> Gas Leakage Detector</strong> for avoiding such kind of incidents. Whenever it detects Gas leakage it sends a SMS to Regitered number.
+            </li>
+            </ul>
+        <ul>
+            <li>Click For <a href="https://github.com/VarpePrasad1/contributor" target="_blank">GitHub Link </a></li>
+        </ul>
+    </div>
+
+    <script>
+        function show_content(j) {
+            for (let i = 0; i < 4; i++) {
+                if (i == j) {
+                    if (document.getElementsByClassName("dropdown-content")[j].style.display == "block") {
+                        console.log("block")
+                        document.getElementsByClassName("dropdown-content")[j].style.display = "none";
+                    }
+                    else {
+                        console.log("none")
+                        document.getElementsByClassName("dropdown-content")[j].style.display = "block";
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>
